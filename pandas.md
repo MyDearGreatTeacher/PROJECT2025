@@ -321,7 +321,7 @@ frame2.values
       - 5.14 使用切割移除列
 
 # 2.
-## 3_pandas_20220311 pandas資料匯入與資料清理(Data cleaning)
+- pandas資料匯入與資料清理(Data cleaning)
 - [經典:Python 資料分析, 2/e](https://www.tenlong.com.tw/products/9789864769254)
   - [GITHUB](https://github.com/wesm/pydata-book) 
   - [中譯](https://github.com/LearnXu/pydata-notebook/tree/master/)
@@ -342,13 +342,7 @@ frame2.values
   - 9.9 從遠端資料服務讀取資料
 
 
-
-## 整體架構
-
-![Pandas_IO.PNG](Pandas_IO.PNG)
-
-## 延伸學習
-
+## 延伸學習:存取資料庫
 - [Pandas讀寫MySQL資料庫](https://codertw.com/%E8%B3%87%E6%96%99%E5%BA%AB/16156/)
 - [使用Python從Mysql抓取每日股價資料與使用pandas進行分析](https://sites.google.com/site/zsgititit/home/python-cheng-shi-she-ji/shi-yongpython-congmysql-zhua-qu-mei-ri-gu-jia-zi-liao-yu-shi-yongpandas-jin-xing-fen-xi)
 - [如何用Pandas連接到PostgreSQL資料庫讀寫數據](https://medium.com/@phoebehuang.pcs04g/use-pandas-link-to-postgresql-6cfc24a930f1)
