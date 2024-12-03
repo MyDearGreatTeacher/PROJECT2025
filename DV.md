@@ -3,11 +3,11 @@
 - [2.Seaborn(Colab 已有支援)](#2)
 - [3.Plotly](#3)
 - [4.bokeh](#4)
+- [5.mplfinance 股票資料視覺化](#5)
 - Pygal
   - [Pygal:Beautiful python charting](https://www.pygal.org/en/stable/) 
 - pyechart
   - [A Python Echarts Plotting Library](https://pyecharts.org/) 
-- mplfinance 股票資料視覺化
 
 # 1
 - [Matplotlib: Visualization with Python](https://matplotlib.org/)
@@ -379,3 +379,40 @@ normal_samples = np.random.normal(size = 100000)
 hist = Histogram(normal_samples)
 show(hist)
 ```
+# 5
+- [mplfinance 股票資料視覺化](https://github.com/matplotlib/mplfinance)
+- [mplfinance plot customizations](https://github.com/matplotlib/mplfinance/blob/master/examples/plot_customizations.ipynb)
+- [更多範例學習 請參閱](https://github.com/matplotlib/mplfinance/tree/master/examples)
+  - mpf_animation_demo1.py 
+### 安裝 ==> pip install --upgrade mplfinance
+
+### 範例學習
+```python
+import pandas as pd
+daily = pd.read_csv('examples/data/SP500_NOV2019_Hist.csv',index_col=0,parse_dates=True)
+daily.index.name = 'Date'
+daily.shape
+daily.head(3)
+daily.tail(3)
+```
+```python
+import mplfinance as mpf
+mpf.plot(daily)
+
+mpf.plot(daily,type='candle')
+mpf.plot(daily,type='line')
+
+year = pd.read_csv('examples/data/SPY_20110701_20120630_Bollinger.csv',index_col=0,parse_dates=True)
+year.index.name = 'Date'
+mpf.plot(year,type='renko')
+mpf.plot(year,type='pnf')
+
+mpf.plot(daily,type='ohlc',mav=4)
+
+mpf.plot(daily,type='candle',mav=(3,6,9))
+
+mpf.plot(daily,type='candle',mav=(3,6,9),volume=True)
+
+mpf.plot(daily,type='candle',mav=(3,6,9),volume=True,show_nontrading=True)
+```
+
