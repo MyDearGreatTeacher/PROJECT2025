@@ -504,7 +504,7 @@ get_state()	Return a tuple representing the internal state of the generator.
 set_state(state)	Set the internal state of the generator from a tuple.
 ```
 # numpy與神經網路
-``‵python
+```python
 # coding: utf-8
 import numpy as np
 
