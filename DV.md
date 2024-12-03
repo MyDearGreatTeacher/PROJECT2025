@@ -347,3 +347,36 @@ print("\n\n")
 print("JSON Representation of A Graph Object:\n\n" + str(fig.to_json()))
 print("\n\n")
 ```
+
+# 4
+- bokeh
+- ## 參考資料
+- [Bokeh documentation](https://docs.bokeh.org/en/latest/)
+- https://docs.bokeh.org/en/latest/docs/user_guide/basic/scatters.html
+
+```python
+from bokeh.io import output_notebook, show
+from bokeh.plotting import figure
+output_notebook()
+
+from bokeh.plotting import figure, show
+
+p = figure(width=400, height=400)
+
+# add a circle renderer with a size, color, and alpha
+p.circle([1, 2, 3, 4, 5], [6, 7, 2, 4, 5], size=20, color="navy", alpha=0.5)
+
+# show the results
+show(p)
+```
+```python
+from bokeh.plotting import Histogram, show
+import numpy as np
+
+# 生成 100000 組標準常態分配（平均值為 0，標準差為 1 的常態分配）隨機變數
+normal_samples = np.random.normal(size = 100000)
+
+
+hist = Histogram(normal_samples)
+show(hist)
+```
