@@ -1,7 +1,6 @@
 # Python 資料視覺化(DATA Visulization)報告
-- Matplotlib
-  - [Matplotlib: Visualization with Python](https://matplotlib.org/)
-- Seaborn
+- [1.Matplotlib](#1)
+- [2.Seaborn](#2)
   - [seaborn: statistical data visualization](https://seaborn.pydata.org/) 
   - Colab 已有支援
 - bokeh
@@ -13,8 +12,9 @@
   - [Plotly Open Source Graphing Library for Python](https://plotly.com/python/) 
 - mplfinance 股票資料視覺化
 
-## Matplotlib
-- 常見的統計圖形
+# 1
+- [Matplotlib: Visualization with Python](https://matplotlib.org/)
+## Matplotlib 常見的統計圖形
   - plot()折線圖   了解資料趨勢
   - scatter()氣泡圖   matplotlib.pyplot.scatter() 了解資料相關度
   - bar()柱狀圖
@@ -24,9 +24,7 @@
   - polar()極線圖
   - stem()——用於繪製棉棒圖
   - boxplot()箱型圖
-  - errorbar()誤差棒圖
-
-# 
+  - errorbar()誤差棒
 - [Writing mathematical expressions](https://matplotlib.org/stable/tutorials/text/mathtext.html)
 - [Plot Mathematical Expressions in Python using Matplotlib](https://www.geeksforgeeks.org/plot-mathematical-expressions-in-python-using-matplotlib/)
 
@@ -194,7 +192,93 @@ ax[0][0].plot(x)
 ax[1][1].plot(y)
 plt.show()
 ```
+# 2
+## seaborn data visualization 資料視覺化
+- [User guide and tutorial](https://seaborn.pydata.org/tutorial.html)
+- [Example gallery](https://seaborn.pydata.org/examples/index.html)
+- [An introduction to seaborn](https://seaborn.pydata.org/tutorial/introduction.html#multivariate-views-on-complex-datasets)
 
+### 參考資料:[[第 19 天] 資料視覺化（2）Seaborn](https://ithelp.ithome.com.tw/articles/10186624)
+```
+直方圖（Histogram）:distplot() 方法
+散佈圖（Scatter plot）:joinplot() 方法
+線圖（Line plot）:factorplot() 方法
+長條圖（Bar plot）:countplot() 方法
+盒鬚圖（Box plot）:boxplot() 方法
+```
+```python
+# Commented out IPython magic to ensure Python compatibility.
+# %matplotlib inline
+
+import seaborn as sns
+import numpy as np
+import matplotlib.pyplot as plt
+
+normal_samples = np.random.normal(size = 100000) # 生成 100000 組標準常態分配（平均值為 0，標準差為 1 的常態分配）隨機變數
+sns.distplot(normal_samples)
+```
+```python
+# Commented out IPython magic to ensure Python compatibility.
+# %matplotlib inline
+
+import seaborn as sns
+import pandas as pd
+import matplotlib.pyplot as plt
+
+speed = [4, 4, 7, 7, 8, 9, 10, 10, 10, 11, 11, 12, 12, 12, 12, 13, 13, 13, 13, 14, 14, 14, 14, 15, 15, 15, 16, 16, 17, 17, 17, 18, 18, 18, 18, 19, 19, 19, 20, 20, 20, 20, 20, 22, 23, 24, 24, 24, 24, 25]
+dist = [2, 10, 4, 22, 16, 10, 18, 26, 34, 17, 28, 14, 20, 24, 28, 26, 34, 34, 46, 26, 36, 60, 80, 20, 26, 54, 32, 40, 32, 40, 50, 42, 56, 76, 84, 36, 46, 68, 32, 48, 52, 56, 64, 66, 54, 70, 92, 93, 120, 85]
+
+cars_df = pd.DataFrame(
+    {"speed": speed,
+     "dist": dist
+    }
+)
+
+sns.jointplot(x = "speed", y = "dist", data = cars_df)
+```
+```python
+# Commented out IPython magic to ensure Python compatibility.
+# %matplotlib inline
+
+import seaborn as sns
+import pandas as pd
+import matplotlib.pyplot as plt
+
+speed = [4, 4, 7, 7, 8, 9, 10, 10, 10, 11, 11, 12, 12, 12, 12, 13, 13, 13, 13, 14, 14, 14, 14, 15, 15, 15, 16, 16, 17, 17, 17, 18, 18, 18, 18, 19, 19, 19, 20, 20, 20, 20, 20, 22, 23, 24, 24, 24, 24, 25]
+dist = [2, 10, 4, 22, 16, 10, 18, 26, 34, 17, 28, 14, 20, 24, 28, 26, 34, 34, 46, 26, 36, 60, 80, 20, 26, 54, 32, 40, 32, 40, 50, 42, 56, 76, 84, 36, 46, 68, 32, 48, 52, 56, 64, 66, 54, 70, 92, 93, 120, 85]
+
+cars_df = pd.DataFrame(
+    {"speed": speed,
+     "dist": dist
+    }
+)
+
+sns.factorplot(data = cars_df, x="speed", y="dist", ci = None)
+```
+```python
+# Commented out IPython magic to ensure Python compatibility.
+# %matplotlib inline
+
+import seaborn as sns
+import pandas as pd
+import matplotlib.pyplot as plt
+
+cyl = [6 ,6 ,4 ,6 ,8 ,6 ,8 ,4 ,4 ,6 ,6 ,8 ,8 ,8 ,8 ,8 ,8 ,4 ,4 ,4 ,4 ,8 ,8 ,8 ,8 ,4 ,4 ,4 ,8 ,6 ,8 ,4]
+cyl_df = pd.DataFrame({"cyl": cyl})
+
+sns.countplot(x = "cyl", data=cyl_df)
+```
+```python
+# Commented out IPython magic to ensure Python compatibility.
+# %matplotlib inline
+
+import seaborn as sns
+import numpy as np
+import matplotlib.pyplot as plt
+
+normal_samples = np.random.normal(size = 100000) # 生成 100000 組標準常態分配（平均值為 0，標準差為 1 的常態分配）隨機變數
+sns.boxplot(normal_samples)
+```
 # 3
 - [Plotly: Data Apps for Production](https://plotly.com/)
   - [Plotly Open Source Graphing Library for Python](https://plotly.com/python/)
