@@ -1,5 +1,5 @@
 # pandas
-- [經典:Python 資料分析, 2/e](https://www.tenlong.com.tw/products/9789864769254)
+- [經典:Python 資料分析, 3/e ](https://www.tenlong.com.tw/products/9786263244177?list_name=srh)
   - [GITHUB](https://github.com/wesm/pydata-book) 
   - [中譯](https://github.com/LearnXu/pydata-notebook/tree/master/)
 - [Pandas 資料分析實戰：使用 Python 進行高效能資料處理及分析 (Learning pandas : High-performance data manipulation and analysis in Python, 2/e) Michael Heydt ](https://www.tenlong.com.tw/products/9789864343898)
