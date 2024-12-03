@@ -349,8 +349,7 @@ print("\n\n")
 ```
 
 # 4
-- bokeh
-- ## 參考資料
+## bokeh參考資料
 - [Bokeh documentation](https://docs.bokeh.org/en/latest/)
 - https://docs.bokeh.org/en/latest/docs/user_guide/basic/scatters.html
 
