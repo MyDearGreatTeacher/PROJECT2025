@@ -10,7 +10,7 @@
   - 5.進階分析:資料聚合和分組
     - [2023教材](https://github.com/MyDearGreatTeacher/ML202302/blob/main/%E8%B3%87%E6%96%99%E7%A7%91%E5%AD%B8/3_4_%E8%B3%87%E6%96%99%E8%81%9A%E5%90%88%E5%92%8C%E5%88%86%E7%B5%84.md)
    - 6.pandas資料分析小專題:股票分析
-    - 參考經典教材 第十三章 資料分析範例
+     - 參考經典教材 第十三章 資料分析範例
 # pandas
 - 經典教材[Python 資料分析, 3/e ](https://www.tenlong.com.tw/products/9786263244177?list_name=srh)
   - [GITHUB](https://github.com/wesm/pydata-book) 
