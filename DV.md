@@ -1,15 +1,12 @@
 # Python 資料視覺化(DATA Visulization)報告
 - [1.Matplotlib](#1)
-- [2.Seaborn](#2)
-  - [seaborn: statistical data visualization](https://seaborn.pydata.org/) 
-  - Colab 已有支援
-- bokeh
+- [2.Seaborn(Colab 已有支援)](#2)
+- [3.Plotly](#3)
+- [4.bokeh](#4)
 - Pygal
   - [Pygal:Beautiful python charting](https://www.pygal.org/en/stable/) 
 - pyechart
   - [A Python Echarts Plotting Library](https://pyecharts.org/) 
-- [Plotly](#3)
-  - [Plotly Open Source Graphing Library for Python](https://plotly.com/python/) 
 - mplfinance 股票資料視覺化
 
 # 1
