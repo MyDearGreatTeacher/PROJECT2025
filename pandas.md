@@ -21,6 +21,8 @@
 
 #### (1)使用[pandas.Series()](https://pandas.pydata.org/docs/reference/api/pandas.Series.html) 建立Series
 ```python
+import pandas as pd
+
 obj = pd.Series([41, 27, -25, 13,21])
 obj
 ```
