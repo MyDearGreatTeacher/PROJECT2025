@@ -1,3 +1,5 @@
+# 舊版資料
+- https://github.com/MyDearGreatTeacher/2022_1_courses/tree/main/%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E5%B0%8E%E8%AB%96
 # pandas
 - [經典:Python 資料分析, 3/e ](https://www.tenlong.com.tw/products/9786263244177?list_name=srh)
   - [GITHUB](https://github.com/wesm/pydata-book) 
