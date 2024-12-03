@@ -7,11 +7,18 @@
   - 4.pandas存取SQLITE資料庫
     - [[Pandas教學]快速掌握Pandas套件讀寫SQLite資料庫的重要方法](https://www.learncodewithmike.com/2021/05/pandas-and-sqlite.html) 
   - 5.進階分析
-  - 6.股票分析 
+  - 6.pandas資料分析小專題:股票分析
+    - 參考經典教材 第十三章 資料分析範例
 # pandas
-- [經典:Python 資料分析, 3/e ](https://www.tenlong.com.tw/products/9786263244177?list_name=srh)
+- 經典教材[Python 資料分析, 3/e ](https://www.tenlong.com.tw/products/9786263244177?list_name=srh)
   - [GITHUB](https://github.com/wesm/pydata-book) 
   - [中譯](https://github.com/LearnXu/pydata-notebook/tree/master/)
+  - 第十三章 資料分析範例
+    - 14.1 USA.gov Data from Bitly（USA.gov資料集）
+    - 14.2 MovieLens 1M Dataset（MovieLens 1M資料集）
+    - 14.3 US Baby Names 1880–2010（1880年至2010年美國嬰兒姓名）
+    - 14.4 USDA Food Database（USDA食品資料庫）
+    - 14.5 2012 Federal Election Commission Database（2012聯邦選舉委員會資料庫）
 - [Pandas 資料分析實戰：使用 Python 進行高效能資料處理及分析 (Learning pandas : High-performance data manipulation and analysis in Python, 2/e) Michael Heydt ](https://www.tenlong.com.tw/products/9789864343898)
   - [GITHUB](https://github.com/PacktPublishing/Learning-Pandas-Second-Edition) 
   - 一定要教  Chapter 15：歷史股價分析
