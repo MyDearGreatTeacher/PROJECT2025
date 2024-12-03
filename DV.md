@@ -9,7 +9,7 @@
   - [Pygal:Beautiful python charting](https://www.pygal.org/en/stable/) 
 - pyechart
   - [A Python Echarts Plotting Library](https://pyecharts.org/) 
-- Plotly
+- [Plotly](#3)
   - [Plotly Open Source Graphing Library for Python](https://plotly.com/python/) 
 - mplfinance 股票資料視覺化
 
@@ -195,3 +195,74 @@ ax[1][1].plot(y)
 plt.show()
 ```
 
+# 3
+- [Plotly: Data Apps for Production](https://plotly.com/)
+  - [Plotly Open Source Graphing Library for Python](https://plotly.com/python/)
+  - [示範](https://plotly.com/python/)
+
+### 範例學習
+- 參考資料 [Creating and Updating Figures in Python](https://plotly.com/python/creating-and-updating-figures/)
+- 作業練習:[[Day 22] Python 視覺化解釋數據 - Plotly Expres](https://ithelp.ithome.com.tw/articles/10277258)
+
+- Figures As Dictionaries
+```python
+!pip install plotly
+
+fig = dict({
+    "data": [{"type": "bar",
+              "x": [1, 2, 3],
+              "y": [1, 3, 2]}],
+    "layout": {"title": {"text": "A Figure Specified By Python Dictionary"}}
+})
+
+# To display the figure defined by this dict, use the low-level plotly.io.show function
+import plotly.io as pio
+pio.show(fig)
+```
+- Figures as Graph Objects
+
+```python
+import plotly.graph_objects as go
+
+fig = go.Figure(
+    data=[go.Bar(x=[1, 2, 3], y=[1, 3, 2])],
+    layout=go.Layout(
+        title=go.layout.Title(text="A Figure Specified By A Graph Object")
+    )
+)
+
+fig.show()
+```
+
+
+```python
+import plotly.graph_objects as go
+
+dict_of_fig = dict({
+    "data": [{"type": "bar",
+              "x": [1, 2, 3],
+              "y": [1, 3, 2]}],
+    "layout": {"title": {"text": "A Figure Specified By A Graph Object With A Dictionary"}}
+})
+
+fig = go.Figure(dict_of_fig)
+
+fig.show()
+```
+- Converting Graph Objects To Dictionaries and JSON
+
+```python
+import plotly.graph_objects as go
+
+fig = go.Figure(
+    data=[go.Bar(x=[1, 2, 3], y=[1, 3, 2])],
+    layout=go.Layout(height=600, width=800)
+)
+
+fig.layout.template = None # to slim down the output
+
+print("Dictionary Representation of A Graph Object:\n\n" + str(fig.to_dict()))
+print("\n\n")
+print("JSON Representation of A Graph Object:\n\n" + str(fig.to_json()))
+print("\n\n")
+```
