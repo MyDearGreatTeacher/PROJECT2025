@@ -3,11 +3,13 @@
 - 課程內容
   - 1.pandas的資料結構:series vs DataFrame
   - 2.[資料匯入與清洗(data cleaning)](https://github.com/MyDearGreatTeacher/2022_1_courses/blob/main/%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E5%B0%8E%E8%AB%96/2_2_3_pandas%E8%B3%87%E6%96%99%E5%8C%AF%E5%85%A5%E8%88%87%E8%B3%87%E6%96%99%E6%B8%85%E7%90%86.md)
-  - 3.資料分析
+  - 3.資料分析:連接_合併和重塑
+    - [2023教材](https://github.com/MyDearGreatTeacher/ML202302/blob/main/%E8%B3%87%E6%96%99%E7%A7%91%E5%AD%B8/3_3_%E8%B3%87%E6%96%99%E8%99%95%E7%90%86_%E9%80%A3%E6%8E%A5_%E5%90%88%E4%BD%B5%E5%92%8C%E9%87%8D%E5%A1%91.md) 
   - 4.pandas存取SQLITE資料庫
     - [[Pandas教學]快速掌握Pandas套件讀寫SQLite資料庫的重要方法](https://www.learncodewithmike.com/2021/05/pandas-and-sqlite.html) 
-  - 5.進階分析
-  - 6.pandas資料分析小專題:股票分析
+  - 5.進階分析:資料聚合和分組
+    - [2023教材](https://github.com/MyDearGreatTeacher/ML202302/blob/main/%E8%B3%87%E6%96%99%E7%A7%91%E5%AD%B8/3_4_%E8%B3%87%E6%96%99%E8%81%9A%E5%90%88%E5%92%8C%E5%88%86%E7%B5%84.md)
+   - 6.pandas資料分析小專題:股票分析
     - 參考經典教材 第十三章 資料分析範例
 # pandas
 - 經典教材[Python 資料分析, 3/e ](https://www.tenlong.com.tw/products/9786263244177?list_name=srh)
