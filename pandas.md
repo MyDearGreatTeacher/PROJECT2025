@@ -2,7 +2,7 @@
 - https://github.com/MyDearGreatTeacher/2022_1_courses/tree/main/%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E5%B0%8E%E8%AB%96
 - 課程內容
   - 1.pandas的資料結構:series vs DataFrame
-  - 2.[資料匯入與清洗(data cleaning)](https://github.com/MyDearGreatTeacher/2022_1_courses/blob/main/%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E5%B0%8E%E8%AB%96/2_2_3_pandas%E8%B3%87%E6%96%99%E5%8C%AF%E5%85%A5%E8%88%87%E8%B3%87%E6%96%99%E6%B8%85%E7%90%86.md)
+  - 2.[資料匯入與清洗(data cleaning)](#2.md)
   - 3.資料分析:連接_合併和重塑
     - [2023教材](https://github.com/MyDearGreatTeacher/ML202302/blob/main/%E8%B3%87%E6%96%99%E7%A7%91%E5%AD%B8/3_3_%E8%B3%87%E6%96%99%E8%99%95%E7%90%86_%E9%80%A3%E6%8E%A5_%E5%90%88%E4%BD%B5%E5%92%8C%E9%87%8D%E5%A1%91.md) 
   - 4.pandas存取SQLITE資料庫
